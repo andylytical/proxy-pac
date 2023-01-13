@@ -51,6 +51,7 @@ function FindProxyForURL(url, host) {
     "identity.ncsa.illinois.edu",
     "identity.uillinois.edu",
     "internal.ncsa.illinois.edu",
+    "jira-test.ncsa.illinois.edu",
     "netact.ncsa.illinois.edu",
     "odcim.ncsa.illinois.edu",
   ];
