@@ -43,7 +43,7 @@ function FindProxyForURL(url, host) {
     return proxy_5704;
 
   /* FLASK TESTING */
-  if ( url.startsWith( "http://metris:8080" ) )
+  if ( url.startsWith( "http://metris" ) )
     return proxy_5703;
 
   /* Anything below here isn't needed when accessed from work */
