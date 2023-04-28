@@ -27,9 +27,10 @@ function FindProxyForURL(url, host) {
 
   /* CERBERUS (5701) */
   var cerb_tunnel_hosts = [
-    "netdot.ncsa.illinois.edu",
-    "vsphere.ncsa.illinois.edu",
     "mgrscontest.ncsa.illinois.edu",
+    "netdot.ncsa.illinois.edu",
+    "vcenter.internal.ncsa.edu",
+    "vsphere.ncsa.illinois.edu",
   ];
   if ( cerb_tunnel_hosts.includes( host ) )
     return proxy_5701;
@@ -55,12 +56,15 @@ function FindProxyForURL(url, host) {
     "identity.ncsa.illinois.edu",
     "identity.uillinois.edu",
     "internal.ncsa.illinois.edu",
-    "jiracmdline.ncsa.illinois.edu",
     "jira-test.ncsa.illinois.edu",
+    "jiracmdline.ncsa.illinois.edu",
     "netact.ncsa.illinois.edu",
     "odcim.ncsa.illinois.edu",
   ];
   if ( ncsa_tunnel_hosts.includes( host ) )
+    return proxy_5703;
+
+  if ( shExpMatch( host, "*.internal.ncsa.edu" ) )
     return proxy_5703;
 
   /* No match */
