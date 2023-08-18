@@ -54,6 +54,13 @@ function FindProxyForURL(url, host) {
   /* NCSA (5703) */
   var ncsa_tunnel_hosts = [
     "crashplan.ncsa.illinois.edu",
+    "cotton.ncsa.illinois.edu",
+    "mylar.ncsa.illinois.edu",
+    "paper.ncsa.illinois.edu",
+    "papyrus.ncsa.illinois.edu",
+    "parchment.ncsa.illinois.edu",
+    "tyvek.ncsa.illinois.edu",
+    "vellum.ncsa.illinois.edu",
     "identity.ncsa.illinois.edu",
     "identity.uillinois.edu",
     "internal.ncsa.illinois.edu",
