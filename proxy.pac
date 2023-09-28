@@ -24,13 +24,13 @@ function FindProxyForURL(url, host) {
   if ( ache_tunnel_hosts.includes( host ) )
     return proxy_5700;
 
-
   /* CERBERUS (5701) */
   var cerb_tunnel_hosts = [
     "mgrscontest.ncsa.illinois.edu",
     "netdot.ncsa.illinois.edu",
     "vcenter.internal.ncsa.edu",
     "vsphere.ncsa.illinois.edu",
+    "jira-test.ncsa.illinois.edu",
   ];
   if ( cerb_tunnel_hosts.includes( host ) )
     return proxy_5701;
