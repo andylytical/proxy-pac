@@ -31,6 +31,7 @@ function FindProxyForURL(url, host) {
     "vcenter.internal.ncsa.edu",
     "vsphere.ncsa.illinois.edu",
     "jira-test.ncsa.illinois.edu",
+    "help-dev.ncsa.illinois.edu",
   ];
   if ( cerb_tunnel_hosts.includes( host ) )
     return proxy_5701;
