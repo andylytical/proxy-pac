@@ -30,8 +30,6 @@ function FindProxyForURL(url, host) {
     "netdot.ncsa.illinois.edu",
     "vcenter.internal.ncsa.edu",
     "vsphere.ncsa.illinois.edu",
-    "jira-test.ncsa.illinois.edu",
-    "help-dev.ncsa.illinois.edu",
   ];
   if ( cerb_tunnel_hosts.includes( host ) )
     return proxy_5701;
@@ -54,21 +52,30 @@ function FindProxyForURL(url, host) {
 
   /* NCSA (5703) */
   var ncsa_tunnel_hosts = [
-    "crashplan.ncsa.illinois.edu",
     "cotton.ncsa.illinois.edu",
+    "crashplan.ncsa.illinois.edu",
+    "help-dev.ncsa.illinois.edu",
+    "identity.ncsa.illinois.edu",
+    "identity.uillinois.edu",
+    "internal.ncsa.illinois.edu",
+    "jira-dev-al.ncsa.illinois.edu",
+    "jira-dev-jg.ncsa.illinois.edu",
+    "jira-dev-kb.ncsa.illinois.edu",
+    "jira-test.ncsa.illinois.edu",
+    "jiracmdline.ncsa.illinois.edu",
+    "kblum-wiki.ncsa.illinois.edu",
     "mylar.ncsa.illinois.edu",
+    "netact.ncsa.illinois.edu",
+    "odcim.ncsa.illinois.edu",
     "paper.ncsa.illinois.edu",
     "papyrus.ncsa.illinois.edu",
     "parchment.ncsa.illinois.edu",
     "tyvek.ncsa.illinois.edu",
     "vellum.ncsa.illinois.edu",
-    "identity.ncsa.illinois.edu",
-    "identity.uillinois.edu",
-    "internal.ncsa.illinois.edu",
-    "jira-test.ncsa.illinois.edu",
-    "jiracmdline.ncsa.illinois.edu",
-    "netact.ncsa.illinois.edu",
-    "odcim.ncsa.illinois.edu",
+    "wiki-dev-al.ncsa.illinois.edu",
+    "wiki-dev-jg.ncsa.illinois.edu",
+    "wiki-dev-kb.ncsa.illinois.edu",
+    "wiki-test.ncsa.illinois.edu",
   ];
   if ( ncsa_tunnel_hosts.includes( host ) )
     return proxy_5703;
