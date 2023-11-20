@@ -73,6 +73,7 @@ function FindProxyForURL(url, host) {
     "tyvek.ncsa.illinois.edu",
     "vellum.ncsa.illinois.edu",
     "wiki-dev-al.ncsa.illinois.edu",
+    "wiki-dev-clovity.ncsa.illinois.edu",
     "wiki-dev-jg.ncsa.illinois.edu",
     "wiki-dev-kb.ncsa.illinois.edu",
     "wiki-test.ncsa.illinois.edu",
