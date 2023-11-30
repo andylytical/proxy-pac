@@ -50,7 +50,7 @@ function FindProxyForURL(url, host) {
   if (isInNet(myIpAddress(), "141.142.0.0", "255.255.0.0"))
     return "DIRECT";
 
-  /* NCSA (5703) */
+  /* NCSA (5703) FQDNs*/
   var ncsa_tunnel_hosts = [
     "cotton.ncsa.illinois.edu",
     "crashplan.ncsa.illinois.edu",
@@ -58,10 +58,6 @@ function FindProxyForURL(url, host) {
     "identity.ncsa.illinois.edu",
     "identity.uillinois.edu",
     "internal.ncsa.illinois.edu",
-    "jira-dev-al.ncsa.illinois.edu",
-    "jira-dev-jg.ncsa.illinois.edu",
-    "jira-dev-kb.ncsa.illinois.edu",
-    "jira-test.ncsa.illinois.edu",
     "jiracmdline.ncsa.illinois.edu",
     "kblum-jira.ncsa.illinois.edu",
     "mylar.ncsa.illinois.edu",
@@ -72,17 +68,15 @@ function FindProxyForURL(url, host) {
     "parchment.ncsa.illinois.edu",
     "tyvek.ncsa.illinois.edu",
     "vellum.ncsa.illinois.edu",
-    "wiki-dev.ncsa.illinois.edu",
-    "wiki-dev-al.ncsa.illinois.edu",
-    "wiki-dev-clovity.ncsa.illinois.edu",
-    "wiki-dev-jg.ncsa.illinois.edu",
-    "wiki-dev-kb.ncsa.illinois.edu",
-    "wiki-test.ncsa.illinois.edu",
   ];
   if ( ncsa_tunnel_hosts.includes( host ) )
     return proxy_5703;
 
-  if ( shExpMatch( host, "*.internal.ncsa.edu" ) )
+  /* NCSA (5703) globs */
+  if ( shExpMatch(host, "jira-*.ncsa.illinois.edu") ||
+       shExpMatch(host, "wiki-*.ncsa.illinois.edu") ||
+       shExpMatch( host, "*.internal.ncsa.edu" )
+  )
     return proxy_5703;
 
   /* No match */
