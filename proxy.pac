@@ -26,10 +26,8 @@ function FindProxyForURL(url, host) {
 
   /* CERBERUS (5701) */
   var cerb_tunnel_hosts = [
-    "mgrscontest.ncsa.illinois.edu",
-    "netdot.ncsa.illinois.edu",
-    "vcenter.internal.ncsa.edu",
     "vsphere.ncsa.illinois.edu",
+    "netdot.ncsa.illinois.edu",
   ];
   if ( cerb_tunnel_hosts.includes( host ) )
     return proxy_5701;
@@ -45,6 +43,13 @@ function FindProxyForURL(url, host) {
   /* FLASK TESTING */
   if ( url.startsWith( "http://metris" ) )
     return proxy_5703;
+
+  /* Uncomment when in Wiki / Jira Maintenance */
+  /* if ( shExpMatch(host, "jira-*.ncsa.illinois.edu") || */
+  /*      shExpMatch(host, "wiki*.ncsa.illinois.edu") || */
+  /*      shExpMatch( host, "*.internal.ncsa.edu" ) */
+  /* ) */
+  /*   return proxy_5703; */
 
   /* Anything below here isn't needed when accessed from work */
   if (isInNet(myIpAddress(), "141.142.0.0", "255.255.0.0"))
@@ -70,13 +75,6 @@ function FindProxyForURL(url, host) {
     "vellum.ncsa.illinois.edu",
   ];
   if ( ncsa_tunnel_hosts.includes( host ) )
-    return proxy_5703;
-
-  /* NCSA (5703) globs */
-  if ( shExpMatch(host, "jira-*.ncsa.illinois.edu") ||
-       shExpMatch(host, "wiki-*.ncsa.illinois.edu") ||
-       shExpMatch( host, "*.internal.ncsa.edu" )
-  )
     return proxy_5703;
 
   /* No match */
