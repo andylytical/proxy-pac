@@ -24,6 +24,10 @@ function FindProxyForURL(url, host) {
   if ( ache_tunnel_hosts.includes( host ) )
     return proxy_5700;
 
+  /* Anything below here isn't needed when connected to VPN */
+  if (isInNet(myIpAddress(), "141.142.146.0", "255.255.255.0"))
+    return "DIRECT";
+
   /* CERBERUS (5701) */
   var cerb_tunnel_hosts = [
     "vsphere.ncsa.illinois.edu",
