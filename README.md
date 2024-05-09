@@ -18,7 +18,7 @@ See also: https://gist.github.com/dusenberrymw/850151bda3253453e5244d6a33c7cd2d
 
 # Testing
 ### Online
-* https://app.thorsen.pm/proxyforurl
+* https://thorsen.pm/proxyforurl
 
 ### Local
 1. Install `libpacparser1`
