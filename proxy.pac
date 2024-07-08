@@ -43,6 +43,9 @@ function FindProxyForURL(url, host) {
   /* FLASK TESTING */
   if ( url.startsWith( "http://metris" ) )
     return proxy_5703;
+  /* ACCESS TESTING */
+  if ( url.startsWith( "http://localhost" ) )
+    return proxy_5703;
 
   /* Uncomment when in Wiki / Jira Maintenance */
   /* if ( shExpMatch(host, "jira-*.ncsa.illinois.edu") || */
