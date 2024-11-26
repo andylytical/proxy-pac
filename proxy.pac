@@ -70,6 +70,8 @@ function FindProxyForURL(url, host) {
     "identity.ncsa.illinois.edu",
     "identity.uillinois.edu",
     "internal.ncsa.illinois.edu",
+    "internal-dev.ncsa.illinois.edu",
+    "internal-test.ncsa.illinois.edu",
     "jira-assets-dev.ncsa.illinois.edu",
     "jira-old.ncsa.illinois.edu",
     "jiracmdline.ncsa.illinois.edu",
