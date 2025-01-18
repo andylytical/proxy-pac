@@ -45,7 +45,7 @@ function FindProxyForURL(url, host) {
     return proxy_5704;
 
   /* FLASK TESTING */
-  if ( url.startsWith( "http://metris" ) )
+  if ( url.startsWith( "http://eukelade" ) )
     return proxy_5703;
   /* ACCESS TESTING */
   if ( url.startsWith( "http://localhost" ) )
