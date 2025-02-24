@@ -47,6 +47,8 @@ function FindProxyForURL(url, host) {
   /* FLASK TESTING */
   if ( url.startsWith( "http://eukelade" ) )
     return proxy_5703;
+  if ( url.startsWith( "http://127.0.0.1" ) )
+    return proxy_5703;
   /* ACCESS TESTING */
   if ( url.startsWith( "http://localhost" ) )
     return proxy_5703;
