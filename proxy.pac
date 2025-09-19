@@ -53,11 +53,18 @@ function FindProxyForURL(url, host) {
   if ( url.startsWith( "http://localhost" ) )
     return proxy_5703;
 
-  /* Uncomment when in Wiki / Jira Maintenance */
+  /* Wiki Maintenance */
+  if ( shExpMatch(host, "wiki*.ncsa.illinois.edu")
+  )
+    return proxy_5703;
+
+  /* Jira Maintenance */
   /* if ( shExpMatch(host, "jira-*.ncsa.illinois.edu") || */
   /*      shExpMatch(host, "wiki*.ncsa.illinois.edu") || */
-  /*      shExpMatch( host, "*.internal.ncsa.edu" ) */
   /* ) */
+  /*   return proxy_5703; */
+
+  /* if ( shExpMatch( host, "*.internal.ncsa.edu" ) */
   /*   return proxy_5703; */
 
   /* Anything below here isn't needed when accessed from work */
