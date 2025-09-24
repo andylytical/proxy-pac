@@ -55,7 +55,7 @@ function FindProxyForURL(url, host) {
 
   /* Jira Maintenance */
   /* if ( shExpMatch(host, "jira*.ncsa.illinois.edu") || */
-  /*      shExpMatch(host, "wiki*.ncsa.illinois.edu") || */
+  /*      shExpMatch(host, "wiki*.ncsa.illinois.edu") */
   /* ) */
   /*   return proxy_5703; */
 
