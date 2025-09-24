@@ -53,13 +53,8 @@ function FindProxyForURL(url, host) {
   if ( url.startsWith( "http://localhost" ) )
     return proxy_5703;
 
-  /* Wiki Maintenance */
-  /* if ( shExpMatch(host, "wiki*.ncsa.illinois.edu") */
-  /* ) */
-  /*   return proxy_5703; */
-
   /* Jira Maintenance */
-  /* if ( shExpMatch(host, "jira-*.ncsa.illinois.edu") || */
+  /* if ( shExpMatch(host, "jira*.ncsa.illinois.edu") || */
   /*      shExpMatch(host, "wiki*.ncsa.illinois.edu") || */
   /* ) */
   /*   return proxy_5703; */
@@ -75,16 +70,13 @@ function FindProxyForURL(url, host) {
   var ncsa_tunnel_hosts = [
     "cotton.ncsa.illinois.edu",
     "crashplan.ncsa.illinois.edu",
-    "help-dev.ncsa.illinois.edu",
     "identity.ncsa.illinois.edu",
     "identity.uillinois.edu",
     "internal.ncsa.illinois.edu",
     "internal-dev.ncsa.illinois.edu",
     "internal-test.ncsa.illinois.edu",
-    "jira-assets-dev.ncsa.illinois.edu",
     "jira-old.ncsa.illinois.edu",
     "jiracmdline.ncsa.illinois.edu",
-    "kblum-jira.ncsa.illinois.edu",
     "mylar.ncsa.illinois.edu",
     "netact.ncsa.illinois.edu",
     "odcim.ncsa.illinois.edu",
