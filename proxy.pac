@@ -53,7 +53,7 @@ function FindProxyForURL(url, host) {
   if ( url.startsWith( "http://localhost" ) )
     return proxy_5703;
 
-  /* Jira Maintenance */
+  /* Maintenance Mode */
   /* if ( shExpMatch(host, "jira*.ncsa.illinois.edu") || */
   /*      shExpMatch(host, "wiki*.ncsa.illinois.edu") */
   /* ) */
