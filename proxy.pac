@@ -85,6 +85,7 @@ function FindProxyForURL(url, host) {
     "parchment.ncsa.illinois.edu",
     "tyvek.ncsa.illinois.edu",
     "vellum.ncsa.illinois.edu",
+    "web.illinois.edu",
   ];
   if ( ncsa_tunnel_hosts.includes( host ) )
     return proxy_5703;
