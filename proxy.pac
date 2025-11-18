@@ -32,6 +32,7 @@ function FindProxyForURL(url, host) {
   var cerb_tunnel_hosts = [
     "vsphere.ncsa.illinois.edu",
     "netdot.ncsa.illinois.edu",
+    "netbox.ncsa.illinois.edu",
   ];
   if ( cerb_tunnel_hosts.includes( host ) )
     return proxy_5701;
