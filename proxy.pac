@@ -79,6 +79,7 @@ function FindProxyForURL(url, host) {
     "jira-old.ncsa.illinois.edu",
     "jiracmdline.ncsa.illinois.edu",
     "mylar.ncsa.illinois.edu",
+    "nagios.ncsa.illinois.edu",
     "netact.ncsa.illinois.edu",
     "odcim.ncsa.illinois.edu",
     "paper.ncsa.illinois.edu",
