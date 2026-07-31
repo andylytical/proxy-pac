@@ -30,9 +30,11 @@ function FindProxyForURL(url, host) {
 
   /* CERBERUS (5701) */
   var cerb_tunnel_hosts = [
-    "vsphere.ncsa.illinois.edu",
-    "netdot.ncsa.illinois.edu",
+    "isf-npcf-pve01.internal.ncsa.edu",
+    "isf-npcf-pve02.internal.ncsa.edu",
     "netbox.ncsa.illinois.edu",
+    "netdot.ncsa.illinois.edu",
+    "vsphere.ncsa.illinois.edu",
   ];
   if ( cerb_tunnel_hosts.includes( host ) )
     return proxy_5701;
@@ -68,19 +70,21 @@ function FindProxyForURL(url, host) {
     return "DIRECT";
 
   /* NCSA (5703) FQDNs*/
+  /* lists.ncsa.illinois.edu needed here for sympa audit python code */
   var ncsa_tunnel_hosts = [
     "cotton.ncsa.illinois.edu",
     "crashplan.ncsa.illinois.edu",
     "identity.ncsa.illinois.edu",
     "identity.uillinois.edu",
-    "internal.ncsa.illinois.edu",
     "internal-dev.ncsa.illinois.edu",
     "internal-test.ncsa.illinois.edu",
+    "internal.ncsa.illinois.edu",
     "jira-old.ncsa.illinois.edu",
     "jiracmdline.ncsa.illinois.edu",
+    "lists.ncsa.illinois.edu",
     "mylar.ncsa.illinois.edu",
-    "nagios.ncsa.illinois.edu",
     "nagios-test.ncsa.illinois.edu",
+    "nagios.ncsa.illinois.edu",
     "netact.ncsa.illinois.edu",
     "odcim.ncsa.illinois.edu",
     "paper.ncsa.illinois.edu",
