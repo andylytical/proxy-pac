@@ -70,10 +70,10 @@ function FindProxyForURL(url, host) {
     return "DIRECT";
 
   /* NCSA (5703) FQDNs*/
-  /* lists.ncsa.illinois.edu needed here for sympa audit python code */
   var ncsa_tunnel_hosts = [
     "cotton.ncsa.illinois.edu",
     "crashplan.ncsa.illinois.edu",
+    "git.ncsa.illinois.edu",
     "identity.ncsa.illinois.edu",
     "identity.uillinois.edu",
     "internal-dev.ncsa.illinois.edu",
@@ -81,7 +81,7 @@ function FindProxyForURL(url, host) {
     "internal.ncsa.illinois.edu",
     "jira-old.ncsa.illinois.edu",
     "jiracmdline.ncsa.illinois.edu",
-    "lists.ncsa.illinois.edu",
+    "lists.ncsa.illinois.edu", /* needed for sympa audit python code */
     "mylar.ncsa.illinois.edu",
     "nagios-test.ncsa.illinois.edu",
     "nagios.ncsa.illinois.edu",
