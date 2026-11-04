@@ -90,6 +90,7 @@ function FindProxyForURL(url, host) {
     "paper.ncsa.illinois.edu",
     "papyrus.ncsa.illinois.edu",
     "parchment.ncsa.illinois.edu",
+    "svna.ncsa.illinois.edu",
     "tyvek.ncsa.illinois.edu",
     "vellum.ncsa.illinois.edu",
     "web.illinois.edu",
